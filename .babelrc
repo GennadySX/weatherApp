@@ -1,0 +1,36 @@
+{
+  "env": {
+    "development" : {
+      "compact": false
+    },
+    "production": {
+      "plugins": ["transform-remove-console"]
+    }
+  },
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@components": "./src/components",
+          "@screens": "./src/screens",
+          "@assets": "./src/assets",
+          "@selectors": "./src/store/selectors",
+          "@reducers": "./src/store/reducers",
+          "@actions": "./src/store/actions",
+          "@store": "./src/store",
+          "@helpers": "./src/helpers",
+          "@constants": "./src/constants",
+          "@layouts": "./src/layouts",
+          "@styles": "./src/styles",
+          "@apptypes": "./src/types",
+          "@api": "./src/api",
+          "@app": "./src/App",
+          "@routes": "./src/routes",
+          "@utils": "./src/utils"
+        }
+      }
+    ]
+  ]
+}

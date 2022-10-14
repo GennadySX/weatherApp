@@ -1,0 +1,55 @@
+// prettier-ignore
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    /* Completeness */
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-native",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "module": "commonjs", //esnext
+    "baseUrl": ".",
+    "skipLibCheck": true,                    /* Skip type checking of declaration files. */
+    "resolveJsonModule": true,               /* Allows importing modules with a ‘.json’ extension, which is a common practice in node projects. */
+    "forceConsistentCasingInFileNames": true,
+    "types": ["jest"],
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,                                /* Skip type checking all .d.ts files. */
+
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@selectors/*": ["./src/store/selectors/*"],
+      "@reducers/*": ["./src/store/reducers/*"],
+      "@actions/*": ["./src/store/actions/*"],
+      "@store": ["./src/store/store"],
+      "@constants/*": ["./src/constants/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@apptypes/*": ["./src/types/*"],
+      "@api/*": ["./src/api/*"],
+      "@app": ["./src/App"],
+      "@routes/*": ["./src/routes/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@configs/*": ["./src/config/*"],
+      "@utils/*": ["./src/utils/*"],
+    },
+    "exclude": [
+      "node_modules",
+      "babel.config.js",
+      "metro.config.js",
+      "jest.config.js",
+      "e2e/**/*.ts"
+    ],
+    "include": [
+      "src/**/*",
+    ]
+  }
+}
